@@ -16,7 +16,7 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
             min-height: 100vh;
             display: flex;
             justify-content: center;
@@ -38,6 +38,23 @@
             margin-bottom: 30px;
             text-align: center;
             font-size: 24px;
+        }
+
+        .header-card {
+            background: #1e40af;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .header-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            display: block;
+            margin: 0 auto;
         }
 
         .form-group {
@@ -64,8 +81,8 @@
 
         input:focus, select:focus {
             outline: none;
-            border-color: #667eea;
-            box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.15);
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15);
             background: white;
         }
 
@@ -80,7 +97,7 @@
         button {
             width: 100%;
             padding: 16px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
             color: white;
             border: none;
             border-radius: 10px;
@@ -93,7 +110,7 @@
 
         button:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+            box-shadow: 0 8px 20px rgba(37, 99, 235, 0.4);
         }
 
         button:active {
@@ -123,7 +140,9 @@
 </head>
 <body>
     <div class="form-container">
-        <h1>📋 Registro de Delegados</h1>
+        <div class="header-card">
+            <img src="acaip.webp" alt="ACAIP">
+        </div>
         
         <form id="delegadosForm">
             <div class="form-group">
